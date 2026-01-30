@@ -16,14 +16,14 @@ The **Zusei Whitepaper** is for information purposes only and does not constitut
 ## 2. Nature of Tokens (Utility Classification)
 
 ### 2.1 Not an Investment Product
-The **$ZUSEI** token and **$Z-WATT** credit are functionally utility tokens designed for use within the Zusei DePIN (Decentralized Physical Infrastructure Network).
+The **$ZST** token and **ZP** credit are functionally utility tokens designed for use within the Zusei DePIN (Decentralized Physical Infrastructure Network).
 * **No Ownership Rights:** Holding these tokens does not grant you any equity, ownership, profit-share, or voting rights in *Zusei Ops Pte. Ltd.* (Singapore), the *Zusei Foundation*, or any affiliated entity, other than the specific governance rights programmed into the smart contract.
 * **No Expectation of Profit:** Users acquire tokens to consume network services (energy verification) or provide infrastructure. Any appreciation in token value is incidental to the growth of network utility, not a result of passive investment.
 
 ### 2.2 Singapore Payment Services Act (PSA) Disclosure
 In accordance with the laws of the Republic of Singapore:
-* **$Z-WATT** is classified as a **"Limited Purpose Digital Payment Token"** (Exempt under the Payment Services Act). It is non-transferable outside the network and can only be redeemed for specific goods/services (Energy & Retail) within a closed-loop merchant ecosystem.
-* **$ZUSEI** is a governance instrument. Zusei Ops Pte. Ltd. is currently engaging with the Monetary Authority of Singapore (MAS) via the FinTech Regulatory Sandbox to ensure ongoing compliance.
+* **ZP** is classified as a **"Limited Purpose Digital Payment Token"** (Exempt under the Payment Services Act). It is non-transferable outside the network and can only be redeemed for specific goods/services (Energy & Retail) within a closed-loop merchant ecosystem.
+* **$ZST** is a governance instrument. Zusei Ops Pte. Ltd. is currently engaging with the Monetary Authority of Singapore (MAS) via the FinTech Regulatory Sandbox to ensure ongoing compliance.
 
 ---
 
