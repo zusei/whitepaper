@@ -9,13 +9,13 @@
 
 **The Risk:**
 The Monetary Authority of Singapore (MAS) has strict regulations regarding Digital Payment Tokens (DPT) under the Payment Services Act (PSA).
-* **Concern:** If $Z-WATT is classified as a "general medium of exchange" rather than a limited utility, Zusei could face licensing requirements that slow growth.
+* **Concern:** If ZP is classified as a "general medium of exchange" rather than a limited utility, Zusei could face licensing requirements that slow growth.
 * **Impact:** Potential geofencing of token features or delisting from local exchanges.
 
 **The Mitigation Strategy:**
-* **The "Closed-Loop" Argument:** We classify **$Z-WATT** strictly as a "Limited Purpose Digital Payment Token" (Exempt under PSA). It is not money; it is a **Programmatic Voucher** usable only within the Zusei Merchant Network for specific goods/services (Energy & Retail).
+* **The "Closed-Loop" Argument:** We classify **ZP** strictly as a "Limited Purpose Digital Payment Token" (Exempt under PSA). It is not money; it is a **Programmatic Voucher** usable only within the Zusei Merchant Network for specific goods/services (Energy & Retail).
 * **Dual-Entity Structure:**
-    * *Zusei Foundation (BVI/Cayman):* Issues the $ZUSEI Governance Token.
+    * *Zusei Foundation (BVI/Cayman):* Issues the $ZST Governance Token.
     * *Zusei Ops Pte. Ltd. (Singapore):* Operates the SaaS platform and manages the "Watt-Point" system (non-crypto interface for merchants).
 * **Proactive Engagement:** We are preparing a legal opinion letter for the MAS FinTech Sandbox to operate as an experimental DePIN utility.
 
@@ -43,14 +43,14 @@ DePIN networks often fail because there are "Users but no Merchants" or "Merchan
 
 **The Mitigation Strategy:**
 * **The "Density Doctrine":** We strictly limit our launch to **One Zone** (Tanjong Pagar) until we hit 80% saturation. We do not open the app to "Global" users until the local grid is viable.
-* **Subsidy Pool:** The Treasury has allocated 15% of the total $ZUSEI supply to "Bootstrap Rewards." Even if merchant utility is low in Month 1, the *speculative* APY for early adopters keeps them engaged until the network matures.
+* **Subsidy Pool:** The Treasury has allocated 15% of the total $ZST supply to "Bootstrap Rewards." Even if merchant utility is low in Month 1, the *speculative* APY for early adopters keeps them engaged until the network matures.
 
 ---
 
 ## 4. Technical Risk (The Spoofing Arms Race)
 
 **The Risk:**
-As the value of $Z-WATT rises, the financial incentive to "fake" presence increases.
+As the value of ZP rises, the financial incentive to "fake" presence increases.
 * **Concern:** Sophisticated actors using Software Defined Radios (SDR) or root-access Android emulators attempt to simulate the ZConnect handshake.
 * **Impact:** Inflation of the token supply without real physical value (Value Leakage).
 
