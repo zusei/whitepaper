@@ -43,8 +43,8 @@ To achieve this, the Zusei Council is divided into **Three Chambers.**
 ---
 
 ## 3. The Treasury (The Capital)
-**Composition:** $ZUSEI Token Holders & Investors.  
-**Requirement:** Must stake $ZUSEI in the Governance Module.
+**Composition:** $ZST Token Holders & Investors.  
+**Requirement:** Must stake $ZST in the Governance Module.
 
 **Powers:**
 * **Macro-Economics:** Voting on the **Net Emission Rate** (inflation) and **Burn Ratios**.
