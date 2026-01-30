@@ -33,7 +33,7 @@ Merchants need a way to stop paying for fake digital clicks and start optimizing
 Zusei introduces a new consensus mechanism: **Proof of Presence (PoP).**
 
 By installing a lightweight IoT node (or using our verified QR protocol), merchants turn their physical stores into "Energy Mining Hubs."
-* **For Users:** You earn **$Z-WATT Credits** simply by showing up. Your physical presence validates the merchant's energy usage, turning your time into a tradable asset.
+* **For Users:** You earn **ZP Credits** simply by showing up. Your physical presence validates the merchant's energy usage, turning your time into a tradable asset.
 * **For Merchants:** You get verified, high-intent footfall. More importantly, you gain access to **Energy Efficiency per Visitor (EEV)** data, allowing you to optimize your operations and offset costs using the Zusei network.
 
 ---
@@ -52,11 +52,11 @@ Our goal is to onboard **500 Genesis Merchants** in the next 12 months, creating
 ## The Business Model: The "Watt" Economy
 
 Zusei operates on a **Burn-and-Mint Equilibrium (BME)** to ensure long-term sustainability:
-1.  **Merchants** purchase and burn the governance token (**$ZUSEI**) to access the network.
-2.  **The Network** mints utility credits (**$Z-WATT**) to reward Users for verified visits.
-3.  **Users** redeem $Z-WATTs for real-world value (discounts, EV charging, or bill offsets).
+1.  **Merchants** purchase and burn the governance token (**$ZST**) to access the network.
+2.  **The Network** mints utility credits (**ZP**) to reward Users for verified visits.
+3.  **Users** redeem ZPs for real-world value (discounts, EV charging, or bill offsets).
 
-This circular economy ensures that as the network grows, the supply of $ZUSEI is naturally constricted, while the utility of the network scales with physical usage.
+This circular economy ensures that as the network grows, the supply of $ZST is naturally constricted, while the utility of the network scales with physical usage.
 
 ## Conclusion
 
