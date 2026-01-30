@@ -2,7 +2,7 @@
 
 **Version:** 1.0 (Genesis)  
 **Date:** January 2026  
-**Author:** Zake, with the help of Zakey (Zake's AI Assistant)
+**Author:** Zake and Zakey AI Assistant
 **Status:** Live Development  
 
 ## Welcome to Zusei
