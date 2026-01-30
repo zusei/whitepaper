@@ -8,7 +8,7 @@
 ## Welcome to Zusei
 Zusei is a Decentralized Physical Infrastructure Network (DePIN) that verifies human presence in the physical world. In an era where Artificial Intelligence creates infinite digital abundance, Zusei anchors value to the only things that remain scarce: **Physical Space, Energy, and Human Time.**
 
-We help Retail and F&B merchants turn their "wasted energy capacity" into a tradable asset called **Watt-Credits**, verified by the footfall of real people.
+We help Retail and F&B merchants turn their "wasted energy capacity" into a tradable asset called **ZP**, verified by the footfall of real people.
 
 ## Documentation Structure
 This Whitepaper is broken down into the following core modules:
