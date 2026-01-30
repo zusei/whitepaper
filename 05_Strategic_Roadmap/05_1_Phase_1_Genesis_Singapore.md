@@ -37,7 +37,7 @@ Our primary KPI for 2026 is not "1 Million Users." It is **500 Active Merchant N
 
 Network theory suggests that at 500 diverse nodes within a defined geographic radius (e.g., the Central Business District + Orchard Road), the **Network Effect** kicks in:
 1.  **Utility Density:** A user is never more than 5 minutes away from a Zusei Node.
-2.  **Liquidity:** There are enough places to *spend* $Z-WATTs that the token becomes "money-like."
+2.  **Liquidity:** There are enough places to *spend* ZPs that the token becomes "money-like."
 3.  **Data Value:** At 500 nodes, the aggregate energy/footfall data becomes statistically significant enough to sell to utility providers or urban planners.
 
 ---
@@ -57,7 +57,7 @@ We will not sell scattershot across the island. We will attack **Zone by Zone**.
 * **Q2 Focus:** **Bugis & Haji Lane.** (Targeting the Gen-Z / Creative crowd).
 * **Q3 Focus:** **Orchard Road.** (Targeting the Tourist / High-Value Shopper).
 
-By clustering merchants, we create **"Energy Zones"** where users can hop from a cafe to a lunch spot to a gym, earning $Z-WATTs at every step.
+By clustering merchants, we create **"Energy Zones"** where users can hop from a cafe to a lunch spot to a gym, earning ZPs at every step.
 
 ---
 
