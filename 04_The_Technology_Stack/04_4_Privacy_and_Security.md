@@ -27,7 +27,7 @@ We utilize **Embedded Wallet** infrastructure to create an invisible, non-custod
 * **The Wallet Magic:** Privy uses **Shamir’s Secret Sharing (SSS)** to split the user's private key into multiple "shares."
     * *Share A:* Stored on the User's device.
     * *Share B:* Stored securely by Wallet.
-* **The Result:** The user gets a fully functional Web3 wallet (to hold $Z-WATTs) without ever seeing a private key. It feels like a Web2 login, but functions like a self-custodial vault.
+* **The Result:** The user gets a fully functional Web3 wallet (to hold ZPs) without ever seeing a private key. It feels like a Web2 login, but functions like a self-custodial vault.
 
 ### 2. The Firewalled Identity
 Crucially, the **Merchant never sees the User's login details.**
