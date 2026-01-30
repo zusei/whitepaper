@@ -20,7 +20,7 @@ All changes follow the strict **ZIP (Zusei Improvement Proposal)** lifecycle:
 ## Mechanism 1: Adjusting the Burn Rate
 
 The most critical economic lever in Zusei is the **Burn-to-Mint Ratio**.
-* **Scenario:** If $ZUSEI price skyrockets, the entry cost for new merchants might become too high.
+* **Scenario:** If $ZST price skyrockets, the entry cost for new merchants might become too high.
 * **The Fix:** The community votes to adjust the "Oracle Sensitivity" to lower the burn requirement.
 
 ### The Adjustment Formula
@@ -29,7 +29,7 @@ We utilize a **Bounded Adjustment Logic** to prevent volatility shocks. The comm
 $$R_{new} = R_{current} \times (1 + \Delta_{vote})$$
 
 Where:
-* $R_{current}$: The current tokens burned per 1 $Z-WATT.
+* $R_{current}$: The current tokens burned per 1 ZP.
 * $\Delta_{vote}$: The net weighted vote outcome (normalized between -0.10 and +0.10).
 
 **The Logic:**
@@ -45,7 +45,7 @@ This ensures the economy steers smoothly, rather than jerking violently based on
 Zusei does not launch everywhere at once. New districts (e.g., "Jurong East" or "Changi Business Park") must be **Activated** by governance.
 
 ### The Density Threshold Formula
-A zone is only eligible for activation (and $Z-WATT rewards) if it meets the **Minimum Viable Density (MVD)**. This prevents "ghost zones" where users have nowhere to spend their credits.
+A zone is only eligible for activation (and ZP rewards) if it meets the **Minimum Viable Density (MVD)**. This prevents "ghost zones" where users have nowhere to spend their credits.
 
 $$D_{zone} = \frac{\sum (N_{active} \times U_{uptime})}{Area_{km^2}}$$
 
@@ -68,7 +68,7 @@ Your voice is not just defined by *how much* you have, but *how long* you are co
 
 $$V_{power} = S_{tokens} \times \sqrt{T_{lock}}$$
 
-* $S_{tokens}$: Amount of $ZUSEI staked.
+* $S_{tokens}$: Amount of $ZST staked.
 * $T_{lock}$: Duration of the lock (in weeks).
 
 **Example:**
