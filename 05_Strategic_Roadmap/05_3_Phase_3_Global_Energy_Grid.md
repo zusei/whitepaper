@@ -12,7 +12,7 @@ While Phase 1 & 2 focus on *Retail Footfall* (verifying humans in shops), Phase 
 
 As the world transitions to full electrification—specifically Electric Vehicles (EVs) and autonomous transport fleets—access to energy becomes the primary economic driver.
 * **The Shift:** We move from tracking **"Human Energy"** (presence) to facilitating **"Electric Energy"** (charging).
-* **The Goal:** To make **$Z-WATT** the universal, cross-border currency for energy access.
+* **The Goal:** To make **ZP** the universal, cross-border currency for energy access.
 
 ---
 
@@ -57,7 +57,7 @@ To achieve this, we are building the **Zusei Energy Gateway**—an open API stan
 
 * **For Grid Operators:** They can query the Zusei Network to see real-time "Human Load" maps.
     * *Insight:* "We see a verified surge of 5,000 people in District 9. Prepare for a spike in AC usage."
-* **For Charging Networks:** They can accept $Z-WATTs as payment without holding crypto.
+* **For Charging Networks:** They can accept ZPs as payment without holding crypto.
     * *Mechanism:* The Zusei Treasury settles the transaction in fiat (USD/JPY/SGD) instantly, while the user pays in Watts.
 
 ---
