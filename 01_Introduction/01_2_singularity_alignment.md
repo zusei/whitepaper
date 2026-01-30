@@ -46,7 +46,7 @@ In an energy-based economy, the most valuable data point is **Utility.**
 ### 2. Preventing "Energy Inflation"
 Just as governments print money, AI can "print" digital activity.
 * **The Problem:** Bots can consume energy to fake engagement (farming likes, views, or clicks).
-* **The Solution:** Zusei ensures that **$Z-WATT Credits** are only minted when a physical human is present. We prevent the "Energy Economy" from being hijacked by bots.
+* **The Solution:** Zusei ensures that **ZP Credits** are only minted when a physical human is present. We prevent the "Energy Economy" from being hijacked by bots.
 
 ### 3. The Practical Application
 We are not waiting for 2030. We are applying this logic to Singaporean retail *today*.
