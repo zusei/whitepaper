@@ -1,7 +1,7 @@
 # 04.2 ZConnect Hardware: The Merchant Node
 
 **Focus:** The Physical-Digital Bridge  
-**Key Component:** Dynamic QR Generation (`print_qr.php`)
+**Key Component:** Dynamic QR Generation
 
 ---
 
@@ -14,7 +14,7 @@ We offer two tiers of hardware integration:
 ### Tier 1: The Software Node (Lite)
 **Target:** Small F&B, Pop-up Stores  
 **Hardware:** Any existing iPad, Android Tablet, or POS Screen.  
-**Mechanism:** The merchant runs the Zusei Merchant App (or a web-wrapper pointing to `print_qr.php`) which turns their screen into a **Dynamic Verification Terminal.**
+**Mechanism:** The merchant runs the Zusei Merchant App (or a web-wrapper pointing) which turns their screen into a **Dynamic Verification Terminal.**
 
 ### Tier 2: The IoT Node (Pro)
 **Target:** High-Volume Retail, Chains, Franchise Outlets  
@@ -25,7 +25,7 @@ We offer two tiers of hardware integration:
 
 ## The Engine: `print_qr.php`
 
-The core security of the ZConnect Node is powered by a lightweight, server-synced script: `print_qr.php`. This script is responsible for generating the **Time-Based One-Time Password (TOTP)** that users scan.
+The core security of the ZConnect Node is powered by a lightweight, server-synced script. This script is responsible for generating the **Time-Based One-Time Password (TOTP)** that users scan.
 
 ### 1. The Generation Logic
 Unlike a static URL (e.g., `zusei.com/shop/starbucks`), the ZConnect QR code is a cryptographic puzzle that changes every 15 seconds.
