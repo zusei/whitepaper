@@ -19,7 +19,7 @@ This creates a new asset class: **Verified Human Energy (VHE).**
 ## 1. The Merchant Loop (Immediate Utility)
 **Status:** Live in Genesis Phase (Singapore)
 
-The most immediate utility of ZP is within the retail network itself. Because merchants have already "paid" for the energy to generate these credits (via the $ZUSEI burn), they are incentivized to accept them as valid payment.
+The most immediate utility of ZP is within the retail network itself. Because merchants have already "paid" for the energy to generate these credits (via the $ZST burn), they are incentivized to accept them as valid payment.
 
 * **Direct Offsets:** Users can burn ZP at the Point of Sale (POS) to offset the cost of goods.
     * *Example:* A S$6.00 latte costs **50 Z-Watts**.
