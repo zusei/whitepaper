@@ -39,7 +39,7 @@ The `zusei_ai_engine.py` processes these three inputs to calculate a **Presence 
 
 $$Score = (GPS_{weight} \times 0.2) + (RSSI_{weight} \times 0.3) + (QR_{validity} \times 0.5)$$
 
-* **Threshold:** Only a Score of **> 0.95** triggers the Smart Contract to mint $Z-WATT.
+* **Threshold:** Only a Score of **> 0.95** triggers the Smart Contract to mint ZP.
 * **Rejection:** If the QR is valid but the GPS is 5km away (Remote Scanning Attack), the Score drops to 0.5 and the transaction is flagged as fraud.
 
 ---
@@ -57,4 +57,4 @@ $$Score = (GPS_{weight} \times 0.2) + (RSSI_{weight} \times 0.3) + (QR_{validity
 
 ## Conclusion
 
-Zusei's Proof of Presence is not just "location tracking." It is a **Cryptographic Proof of Physics.** By combining satellite data, local radio waves, and a time-locked visual handshake, we ensure that every $Z-WATT minted represents a genuine human interaction with the physical energy grid.
+Zusei's Proof of Presence is not just "location tracking." It is a **Cryptographic Proof of Physics.** By combining satellite data, local radio waves, and a time-locked visual handshake, we ensure that every ZP minted represents a genuine human interaction with the physical energy grid.
