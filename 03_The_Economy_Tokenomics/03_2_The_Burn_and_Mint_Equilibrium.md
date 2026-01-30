@@ -20,19 +20,19 @@ Zusei solves this using the **Burn-and-Mint Equilibrium (BME)** model. This arch
 The BME model creates a circular flow of value between the External Market (Traders/Investors) and the Internal Economy (Merchants/Users).
 
 ### Step 1: Purchasing Power (The Demand)
-Merchants require **$Z-WATT Credits** to reward customers for verified presence. To acquire these credits, they cannot simply "buy" them from the protocol. They must burn the native governance token.
+Merchants require **ZP Credits** to reward customers for verified presence. To acquire these credits, they cannot simply "buy" them from the protocol. They must burn the native governance token.
 * **Action:** Merchant purchases $ZST on the open market (CEX/DEX).
 * **Conversion:** Merchant sends $ZST to the **Burn Address** via the Zusei Merchant Dashboard.
 
 ### Step 2: The Transformation (The Burn)
-The protocol calculates the current market price of $ZST and mints the equivalent dollar-value in $Z-WATT credits.
+The protocol calculates the current market price of $ZST and mints the equivalent dollar-value in ZP credits.
 
 **The Burn Formula:**
 $$B_t = \frac{U_t}{P_t}$$
 
 Where:
 * $B_t$: The number of $ZST tokens burned at time $t$.
-* $U_t$: The Usage Demand (Total USD value of $Z-WATT credits requested by the merchant).
+* $U_t$: The Usage Demand (Total USD value of ZP credits requested by the merchant).
 * $P_t$: The Market Price of 1 $ZST token in USD.
 
 > **Example:** A Merchant needs **$100 worth of Credits** (approx 1,000 Watts).
@@ -72,9 +72,9 @@ This cycle ensures that value flows from the speculative market into the physica
 
 1.  **Merchant** buys $ZST on Exchange (Creating **Demand**).
 2.  **Merchant** burns $ZST -> Protocol (Creating **Scarcity**).
-3.  **Protocol** mints $Z-WATT (Creating **Stability**).
-4.  **User** earns $Z-WATT for Verified Presence (Creating **Utility**).
-5.  **User** spends/redeems $Z-WATT at Merchant (Closing the **Loop**).
+3.  **Protocol** mints ZP (Creating **Stability**).
+4.  **User** earns ZP for Verified Presence (Creating **Utility**).
+5.  **User** spends/redeems ZP at Merchant (Closing the **Loop**).
 6.  **Protocol** recycles a portion of value via Net Emissions -> **Nodes** (Ensuring **Longevity**).
 
 ---
