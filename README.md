@@ -64,7 +64,7 @@ We are giving the physical world the same thing Twitter gave the digital world: 
 We are not building another tracking tool. We are building a **Sovereign Utility.**
 
 1.  **Privacy is Non-Negotiable:** We use Zero-Knowledge (ZK) proofs. We verify *that* you are there, without revealing *who* you are to the merchant. We track the arrival, not the journey.
-2.  **Data Belongs to the User:** In Web2, you are the product. In Zusei, you are the miner. You generate the data; you earn the value ($Z-WATT).
+2.  **Data Belongs to the User:** In Web2, you are the product. In Zusei, you are the miner. You generate the data; you earn the value (ZP).
 3.  **The "Chicken Rice" Standard:** Technology must serve the streets. If our tech is too complex for a Hawker Uncle to use, we have failed. We start small, dense, and hyper-local.
 
 ### The Call to Arms
