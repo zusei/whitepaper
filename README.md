@@ -13,7 +13,7 @@ We help Retail and F&B merchants turn their "wasted energy capacity" into a trad
 ## Documentation Structure
 This Whitepaper is broken down into the following core modules:
 1.  **The Vision:** Why "Proof of Presence" matters in 2026.
-2.  **The Economy:** How $Z-WATTs and $ZUSEI work together.
+2.  **The Economy:** How ZP and $ZST work together.
 3.  **The Technology:** How we verify location without invading privacy.
 4.  **The Roadmap:** Our path from Singapore to the Global Energy Grid.
 
