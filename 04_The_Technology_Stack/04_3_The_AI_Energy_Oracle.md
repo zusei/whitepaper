@@ -33,7 +33,7 @@ The Zusei's AI Engine Python script aggregates data from two streams:
 
 ## The Optimization Loop (Python Logic)
 
-The Oracle doesn't just watch; it **acts**. It uses a feedback loop to dynamically adjust the **$Z-WATT Reward Rate** to correct inefficiencies.
+The Oracle doesn't just watch; it **acts**. It uses a feedback loop to dynamically adjust the **ZP Reward Rate** to correct inefficiencies.
 
 ### The Algorithm:
 ```python
