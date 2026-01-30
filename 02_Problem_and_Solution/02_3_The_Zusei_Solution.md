@@ -52,7 +52,7 @@ This creates a **"Clean Data" layer** for the economy. Advertisers, governments,
 
 Zusei replaces the extractive Web2 ad model with a generative Web3 energy model.
 
-* **For the Merchant:** Instead of paying Facebook for a "click," they pay the Customer directly with **$Z-WATT Credits** for their verified presence. They are purchasing **Proof of Utility.**
+* **For the Merchant:** Instead of paying Facebook for a "click," they pay the Customer directly with **ZP Credits** for their verified presence. They are purchasing **Proof of Utility.**
 * **For the User:** They are no longer the product; they are the **validator.** By simply living their life—going for coffee, visiting a store, charging their EV—they are mining value from the energy grid.
 
 **We turn the act of "showing up" into a Proof of Work.**
