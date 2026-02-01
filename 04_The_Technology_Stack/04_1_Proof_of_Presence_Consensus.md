@@ -1,46 +1,48 @@
 # 04.1 Proof of Presence (PoP): The Consensus Mechanism
 
 **Focus:** Technical Architecture & Fraud Prevention  
-**Key Concept:** Multi-Factor Physical Authentication (MFPA)
+**Key Concept:** Tri-Layer Physical Consensus
 
 ---
 
 ## The "Unfakeable" Standard
 
-In a digital world, "identity" is a private key. In the physical world, "presence" is a convergence of signals.
+In the digital world, "identity" is a private key. In the physical world, "presence" is a convergence of signals.
 
-To verify a user is truly at a location—and not sitting on a couch in another country using a GPS spoofer—Zusei utilizes a **Tri-Layer Consensus Model**. A "Proof of Presence" is only valid if all three layers achieve consensus within a <500ms window.
+To verify a user is truly at a location—and not sitting on a couch in another country using a GPS spoofer—Zusei utilizes a **Tri-Layer Consensus Model**. A "Proof of Presence" block is only mined if all three layers achieve consensus within a <500ms window.
 
-### Layer 1: The Macro-Spatial Lock (GPS Geofence)
-* **The Check:** The user's device queries the GNSS (Global Navigation Satellite System).
-* **The Logic:** The app validates if the user's coordinates fall within a varying radius (e.g., 30m–50m) of the Merchant's registered "Energy Node" coordinates.
-* **The Limitation:** GPS is prone to "drift" indoors and can be easily spoofed by developer tools on Android/iOS. Therefore, GPS is treated as a **necessary but insufficient** condition. It acts as the initial filter.
 
-### Layer 2: The Micro-Environmental Lock (Signal Fingerprinting)
-To prove the user is *inside* the building (not just standing on the street corner), Zusei analyzes the ambient electromagnetic environment.
-* **Wi-Fi RSSI (Received Signal Strength Indicator):** The app scans for the Merchant's specific Wi-Fi BSSID (MAC address). It measures the signal strength (e.g., > -60 dBm implies close proximity).
-* **Bluetooth Beacons:** If the ZConnect hardware is BLE-enabled, we perform a cryptographic handshake over Bluetooth.
-* **The Defense:** This prevents "Drive-By Mining" where a user drives past a shop to collect rewards without entering. If the signal profile doesn't match an "indoor" signature, the Proof is rejected.
 
-### Layer 3: The Cryptographic Handshake (Dynamic QR)
-This is the core security layer, powered by the **ZConnect** node.
-* **Static QR vs. Dynamic QR:** A printed paper QR code is insecure; it can be photographed and shared online. Zusei requires a **Time-Based One-Time Password (TOTP)** displayed on a screen (e.g., an iPad, POS screen, or dedicated e-ink device).
+### Layer 1: The Macro-Spatial Lock (Satellite)
+* **The Check:** The Zusei Client queries the GNSS (Global Navigation Satellite System).
+* **The Logic:** The app validates if the user's coordinates fall within the registered geofence radius (e.g., 30m–50m) of the Node.
+* **The Role:** This acts as the **"Coarse Filter."** It filters out 90% of lazy remote attacks but is treated as insufficient on its own due to standard GPS drift and OS-level spoofing tools.
+
+### Layer 2: The Micro-Environmental Lock (RF Signature)
+To prove the user is *inside* the building (High-Intent) rather than standing on the street corner (Low-Intent), Zusei analyzes the ambient electromagnetic environment.
+* **Wi-Fi RSSI (Signal Strength):** The app scans for the Merchant's specific BSSID (MAC address). It measures the signal attenuation (e.g., > -60 dBm implies <5m proximity).
+* **BLE Handshake:** If the ZConnect hardware is present, a low-energy Bluetooth beacon creates a secondary proximity check.
+* **The Defense:** This prevents **"Drive-By Mining"** (collecting rewards while driving past a shop). If the RF signature does not match the "Indoor Profile," the Proof is rejected.
+
+### Layer 3: The Cryptographic Handshake (Hardware TOTP)
+This is the "Ground Truth" layer, powered by the **ZConnect** hardware node.
+* **Visual Cryptography:** We reject static QR codes (which can be photographed and shared). Zusei requires a **Time-Based One-Time Password (TOTP)** displayed on the Node's screen (OLED/iPad).
 * **The Mechanism:**
-    1.  The ZConnect Node generates a new QR code every 15 seconds.
-    2.  **Payload:** `TokenID + Timestamp + Nonce + Merchant_Private_Key_Signature`.
-    3.  **The Interaction:** The user scans this code. The app bundles this "Fresh Token" with the GPS and RSSI data.
-* **The Security:** Because the QR code expires in 15 seconds, a photo of the code sent to a friend remotely will fail validation by the time they try to scan it.
+    1.  The ZConnect Node generates a dynamic 2D barcode every 15 seconds.
+    2.  **Payload:** `TokenID + Timestamp + Nonce + Node_Private_Key_Signature`.
+    3.  **The Interaction:** The user scans this code. The app bundles this "Fresh Token" with the Layer 1 & 2 data and signs it with the User's Private Key.
+* **The Security:** Because the token expires in 15 seconds, a photo sent to a bot farm remotely will fail validation due to network latency and expiration.
 
 ---
 
 ## The Consensus Algorithm
 
-The `zusei_ai_engine.py` processes these three inputs to calculate a **Presence Confidence Score (0.0 - 1.0)**.
+The `zusei_ai_engine.py` processes these three inputs to calculate a **Truth Confidence Score (0.0 - 1.0)** before writing to the ledger.
 
-$$Score = (GPS_{weight} \times 0.2) + (RSSI_{weight} \times 0.3) + (QR_{validity} \times 0.5)$$
+$$Score = (GPS_{weight} \times 0.2) + (RF_{weight} \times 0.3) + (Hardware_{validity} \times 0.5)$$
 
-* **Threshold:** Only a Score of **> 0.95** triggers the Smart Contract to mint ZP.
-* **Rejection:** If the QR is valid but the GPS is 5km away (Remote Scanning Attack), the Score drops to 0.5 and the transaction is flagged as fraud.
+* **Mining Threshold:** Only a Score of **> 0.95** is accepted as "Ground Truth" to mint ZP.
+* **Fraud Flagging:** If the QR is valid but the GPS is 5km away (Remote Scanning Attack), the Score drops to 0.5, the transaction is rejected, and the user's "Trust Score" is penalized.
 
 ---
 
@@ -48,13 +50,15 @@ $$Score = (GPS_{weight} \times 0.2) + (RSSI_{weight} \times 0.3) + (QR_{validity
 
 | Attack Type | The Zusei Defense |
 | :--- | :--- |
-| **GPS Spoofing** | Fails Layer 2 (Wi-Fi/BLE mismatch) and Layer 3 (Cannot see screen). |
+| **GPS Spoofing** | Fails Layer 2 (RF Mismatch) and Layer 3 (Cannot see the screen). |
 | **Photo Replay** | Fails Layer 3 (TOTP expires in 15s). |
-| **Sybil (Bot Farm)** | Fails Physics. One device cannot be in multiple geofences simultaneously. |
-| **Man-in-the-Middle** | All payloads are signed by the Merchant's Private Key stored in the secure element of the ZConnect node. |
+| **Sybil (Bot Farm)** | Fails Physics. A single device cannot be in two geofences simultaneously. |
+| **Man-in-the-Middle** | All payloads are signed by the Node's Private Key stored in the Secure Element (SE). |
 
 ---
 
 ## Conclusion
 
-Zusei's Proof of Presence is not just "location tracking." It is a **Cryptographic Proof of Physics.** By combining satellite data, local radio waves, and a time-locked visual handshake, we ensure that every ZP minted represents a genuine human interaction with the physical energy grid.
+Zusei's Proof of Presence is not "location tracking." It is a **Cryptographic Proof of Physics.**
+
+By combining satellite telemetry, local radio waves, and a time-locked hardware handshake, we ensure that every unit of data sold to an AI Agent represents a genuine, unfakeable human interaction with the physical world.
