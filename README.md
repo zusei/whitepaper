@@ -2,7 +2,7 @@
 
 ![Zusei Banner](https://on.zusei.com/vc/assets/img/zusei_text.svg)
 
-**Version:** 2.0 (AI-Native)  
+**Version:** 2.0  
 **Date:** February 2026  
 **Author:** Zake (Founder)  
 **Status:** Closed Beta (Singapore Genesis)  
