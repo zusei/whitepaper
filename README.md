@@ -1,6 +1,6 @@
 # Zusei Protocol: The Ground Truth Layer
 
-![Zusei Banner](https://on.zusei.com/vc/assets/img/zusei_text_dark.svg)
+![Zusei Banner](https://on.zusei.com/vc/assets/img/zusei_text.svg)
 
 **Version:** 2.0 (AI-Native)  
 **Date:** February 2026  
