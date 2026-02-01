@@ -1,57 +1,57 @@
 # 06.1 The Zusei Council: Governance & Decentralization
 
-**Focus:** Protocol Management & Decision Making  
-**Model:** Tri-Cameral DAO (Merchants, Developers, Holders)
+**Focus:** Protocol Management & Integrity Assurance  
+**Model:** Tri-Cameral Governance (Operators, Architects, Capital)
 
 ---
 
-## The Governance Philosophy: "Proof of Merit"
+## The Governance Philosophy: "Stakeholders over Shareholders"
 
-Most DAOs (Decentralized Autonomous Organizations) fail because they rely on "One Token, One Vote." This allows wealthy "whales" to buy control of the network without contributing value.
+Most DAOs fail because they rely on simple "One Token, One Vote" plutocracies. This allows wealthy speculators to override the needs of the actual network builders.
 
-Zusei utilizes a **Meritocratic Governance Model.**
-We believe that the people running the physical infrastructure (Merchants) and the people building the code (Developers) should have as much power as the people providing the capital (Token Holders).
+Zusei utilizes a **Tri-Cameral Governance Model.**
+We believe that the people maintaining the physical infrastructure (Operators) and the people writing the code (Architects) must hold equal power to the people providing the capital (Investors).
 
-To achieve this, the Zusei Council is divided into **Three Chambers.**
+To achieve this, the Zusei Council is divided into three distinct chambers, each with checks and balances over the others.
 
 ---
 
-## 1. The Merchant Guild (The Operators)
-**Composition:** Verified Node Operators (Retail/F&B Merchants).  
-**Requirement:** Must maintain an Active Node with >98% Uptime for 3 months.
+## 1. The Operator Network (The Physical Layer)
+**Composition:** Verified ZConnect Node Operators (Merchants, Mall Owners, Smart City Partners).  
+**Requirement:** Must maintain an Active Node with >98% Uptime for 3 consecutive months.
 
 **Powers:**
-* **Zone Parametrization:** Voting on reward multipliers for specific districts (e.g., *"Should we boost Z-Watt rewards in Orchard Road during the Great Singapore Sale?"*).
-* **Dispute Resolution:** acting as a jury for flagged "fraud" cases or hardware disputes.
-* **Hardware Certification:** Approving new third-party IoT devices for the network.
+* **Zone Parametrization:** Voting on "Mining Difficulty" for specific zones (e.g., *"Should we increase the Data Yield in Tokyo to incentivize more sensors?"*).
+* **Hardware Certification:** Approving new third-party IoT devices (e.g., allowing a new model of EV Charger to act as a mining node).
+* **Dispute Resolution:** Serving as the "Jury" for flagged fraud cases or hardware disputes.
 
-**Voting Weight:** Based on **Node Reliability Score** (Uptime + Verified Footfall), not just token holdings.
-
----
-
-## 2. The Developer DAO (The Architects)
-**Composition:** Core Team & Open Source Contributors.  
-**Requirement:** Must have merged code into the main repo (`zusei-core` or `zconnect`).
-
-**Powers:**
-* **Technical Upgrades:** Approving changes to the Physical Scan logic or Zusei AI algorithms.
-* **Security Audits:** Managing the Bug Bounty program and emergency patches.
-* **API Standards:** Defining how external partners (EV chargers, grids) integrate with Zusei.
-
-**Voting Weight:** Based on **Code Contribution** (Commits + Impact).
+**Voting Weight:** Weighted by **Data Quality Score** (Uptime + Verified Signal Integrity), ensuring that honest nodes have more say than large but low-quality farms.
 
 ---
 
-## 3. The Treasury (The Capital)
-**Composition:** $ZST Token Holders & Investors.  
-**Requirement:** Must stake $ZST in the Governance Module.
+## 2. The Architect Council (The Code Layer)
+**Composition:** Core Developers & Open Source Contributors.  
+**Requirement:** Must have merged significant code into the core repositories (`zusei-core` or `zconnect-sdk`).
 
 **Powers:**
-* **Macro-Economics:** Voting on the **Net Emission Rate** (inflation) and **Burn Ratios**.
-* **Treasury Spend:** Approving marketing budgets (e.g., the "12 Days of Presence" campaign) or partnership grants.
-* **Exchange Listings:** Deciding on liquidity provision for CEX/DEX listings.
+* **Consensus Upgrades:** Approving changes to the Proof of Presence algorithm (e.g., tightening the GPS drift tolerance).
+* **Security Audits:** Managing the Bug Bounty program and authorizing emergency patches.
+* **API Standards:** Defining the JSON schemas for how AI Agents and Enterprise Clients consume the data.
 
-**Voting Weight:** Proportional to **Staked Tokens** x **Time Locked** (Longer lockup = More voting power).
+**Voting Weight:** Meritocratic, based on **Code Contribution** (Commits + Impact).
+
+---
+
+## 3. The Treasury DAO (The Capital Layer)
+**Composition:** $ZST Token Holders, VCs, and Liquidity Providers.  
+**Requirement:** Must stake $ZST in the Governance Module (veZST).
+
+**Powers:**
+* **Macro-Economics:** Voting on the **Burn-and-Mint Ratios** and adjusting the **Net Emission Cap**.
+* **Treasury Allocation:** Approving marketing budgets, partnership grants, or CEX liquidity provisions.
+* **Fee Switches:** Deciding the take-rate on the Enterprise Data API.
+
+**Voting Weight:** Proportional to **Staked Tokens** × **Time Locked** (Longer lockup = More voting power).
 
 ---
 
@@ -59,24 +59,25 @@ To achieve this, the Zusei Council is divided into **Three Chambers.**
 
 All changes to the network must pass through a **Zusei Improvement Proposal (ZIP).**
 
-1.  **Draft:** Any Council Member can draft a ZIP (e.g., ZIP-12: "Increase Reward Cap for Late-Night Cafes").
+1.  **Draft:** Any Stakeholder can draft a ZIP (e.g., *ZIP-12: "Integrate Tesla Supercharger API as Verified Node"*).
 2.  **Discussion:** The proposal is debated on the governance forum for 7 days.
-3.  **Snapshot Vote:** The relevant Chambers vote on-chain.
-    * *Operational ZIPs* require Merchant + Developer approval.
-    * *Financial ZIPs* require Treasury + Merchant approval.
-4.  **Execution:** If passed (>66% Supermajority), the change is automatically deployed via smart contract or scheduled for the next hard fork.
+3.  **Multi-Sig Vote:** The relevant Chambers vote on-chain.
+    * *Protocol Upgrades* require Architect + Operator approval.
+    * *Financial Changes* require Treasury + Operator approval.
+4.  **Execution:** If passed (>66% Supermajority), the change is automatically deployed via Timelock Smart Contract.
 
 ---
 
-## The "Veto" Mechanism (Safety Valve)
+## The "Integrity Veto" (Safety Valve)
 
-To prevent a "Hostile Takeover" (e.g., a malicious whale trying to drain the treasury), the **Merchant Guild** holds a **Veto Right** over financial proposals.
+To prevent a "Financial Attack" (e.g., Investors trying to lower data standards to pump metrics), the **Operator Network** holds a **Veto Right** over technical changes.
 
-* **Scenario:** An investor proposes to mint 1 billion new tokens to sell for profit.
-* **The Check:** Even if they have 51% of the tokens, the Merchant Guild (who rely on the token price for their business) can VETO the proposal if it harms the long-term health of the network.
+* **The Scenario:** The Treasury DAO votes to "loosen" the GPS verification strictness to allow more users to mine (inflating growth metrics).
+* **The Risk:** This would degrade data quality, causing Enterprise Clients (who buy the data) to leave.
+* **The Check:** The Operator Network (whose revenue depends on selling high-quality data) can **VETO** this proposal to protect the integrity of the product.
 
 ---
 
 ## Conclusion
 
-The Zusei Council is designed to balance **Profit** with **Utility.** By giving a distinct voice to the physical businesses that power the grid, we ensure that Zusei remains a protocol for the *real world*, not just a casino for speculators.
+The Zusei Council is designed to balance **Profit** with **Truth.** By giving a constitutional voice to the physical businesses that power the grid, we ensure that Zusei remains a utility for the **Real World**, not just a casino for the digital one.
