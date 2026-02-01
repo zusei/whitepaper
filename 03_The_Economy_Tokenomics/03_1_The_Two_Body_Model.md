@@ -1,72 +1,79 @@
-# 03.1 The Two-Body Model: Separating State from Speculation
+# 03.1 The Two-Token Architecture: Separating State from Speculation
 
-**Focus:** Economic Stability & Incentive Alignment  
-**Core Mechanism:** Dual-Token Architecture ($ZST vs. ZP)
+**Focus:** Economic Stability for Enterprise Clients  
+**Core Mechanism:** The Burn-and-Mint Equilibrium ($ZST vs. ZP)
 
 ---
 
 ## The Volatility Problem
 
-In single-token networks, the asset used for **speculation** (trading) is the same asset used for **utility** (payments/rewards). This creates a critical failure mode:
-* **When price spikes:** The service becomes too expensive for users/merchants to use.
-* **When price crashes:** The rewards become worthless, and users leave the network.
+In single-token networks, the asset used for **speculation** (investing) is the same asset used for **utility** (payments). This creates a critical failure mode for enterprise adoption:
+* **The "Gas" Crisis:** If the token price spikes 10x, the cost to use the network (API fees/Data queries) also spikes 10x.
+* **The AI Friction:** An Autonomous Buying Agent (AI) operates on strict budget parameters. It cannot subscribe to a data feed if the cost fluctuates wildly due to crypto speculation.
 
-To build a sustainable "Energy Grid" that functions in both Bull and Bear markets, Zusei decouples **Network Value** from **Operational Utility.**
+To build a **Data Infrastructure** that serves global enterprise clients, Zusei decouples **Network Value** ($ZST) from **Operational Utility** (ZP).
 
 ---
 
-## Token 1: $ZST (The Governance Asset)
+## Token 1: $ZST (The Network Equity)
 
 **Type:** Publicly Tradable Asset (ERC-20 / SPL)  
-**Role:** Volatility Sponge & Network Ownership  
+**Role:** Value Accrual & Security Collateral  
 **Supply:** Fixed Max Supply (Deflationary via Burn)
 
-$ZST is the **Macro-Economic** token. It captures the aggregate value of the entire network. Its price is determined by the open market (CEX/DEX) and reflects the collective belief in the future of the Zusei protocol.
+$ZST is the **Macro-Economic** token. It captures the aggregate value of the network's data utility. Its price floats on the open market (CEX/DEX) and reflects the collective belief in the future of the protocol.
 
 **Primary Functions:**
-1.  **Staking:** Merchants and Node Operators must stake $ZST to activate their ZConnect hardware. This acts as "collateral" for honest behavior.
-2.  **Burning:** $ZST must be purchased and burned to generate ZP credits (see Section 03.2).
-3.  **Governance:** Holders vote on protocol parameters, such as "Energy Multipliers" for specific zones or Carbon Tax integration rates.
+1.  **Node Collateral (Staking):** To operate a ZConnect Hardware Node, operators must stake $ZST. This acts as a "Security Bond." If a node attempts to spoof data (Sybil Attack), their stake is slashed.
+2.  **Deflationary Engine:** $ZST is the fuel for the economy. It must be purchased from the open market and **burned** to mint ZP credits.
+3.  **Governance:** Holders vote on "Truth Parameters," such as which new cities to activate or the difficulty adjustment for mining rewards.
 
 ---
 
-## Token 2: ZP (The Utility Credit)
+## Token 2: ZP (The Data Credit)
 
-**Type:** Internal Utility Token (Stable-Value)  
-**Role:** Operational Currency & Reward Unit  
-**Supply:** Elastic (Minted on Demand / Burned on Redemption)
+**Type:** Internal Utility Token (Stable-Value Peg)  
+**Role:** Operational Currency & Bandwidth  
+**Supply:** Elastic (Minted on Demand / Burned on Usage)
 
-ZP is the **Micro-Economic** unit. It acts as a stable medium of exchange within the Zusei ecosystem, pegged to real-world utility (Energy).
+ZP (Zone Power) is the **Micro-Economic** unit. It acts as a stable medium of exchange within the Zusei ecosystem, pegged to real-world utility (e.g., $1.00 USD worth of Data/Reward).
 
 **Primary Functions:**
-1.  **User Rewards:** When a user verifies presence, they earn ZP. The amount earned is consistent relative to the "energy value" provided, regardless of the $ZST market price.
-2.  **Redemption:** Users spend ZP to redeem rewards (discounts, EV charging, bill offsets) at participating merchants.
-3.  **Non-Speculative:** ZP is generally non-transferable on public exchanges to prevent external speculation from distorting the internal economy.
+1.  **Mining Rewards:** When a user validates their presence, they earn ZP. The Dollar-value of this reward is consistent (e.g., $0.50 per visit), protecting miners from market crashes.
+2.  **Enterprise Credits:** Merchants and Data Subscribers use ZP to pay for "Proof of Presence" verification campaigns.
+3.  **Non-Speculative:** ZP is non-transferable on public exchanges. This prevents external speculation from distorting the cost of using the network.
 
 ---
 
-## The Interaction: The Stability Bridge
+## The Interaction: The Burn-and-Mint Equilibrium (BME)
 
-The separation ensures that **User Experience** remains constant even if **Market Conditions** are chaotic.
+The separation ensures that **Enterprise Costs** remain predictable (Fiat-denominated) even if **Crypto Markets** are volatile.
 
-### Scenario A: $ZST Price Skyrockets (Bull Market)
-* **The Fear:** Merchants can't afford to buy tokens to reward users.
-* **The Reality:** Since ZP has a stable value (e.g., $0.10 utility), the merchant burns *fewer* $ZST tokens to mint the same amount of ZPs. The cost to the merchant remains stable in Dollar/Energy terms.
+### The Mechanism
+When an Enterprise Client wants to buy $1,000 worth of Data/Footfall verification:
+1.  They pay $1,000 in Fiat/Stablecoins.
+2.  The Protocol smart contract buys $1,000 worth of **$ZST** from the open market.
+3.  The Protocol **BURNS** the $ZST (removing it from supply forever).
+4.  The Protocol **MINTS** 1,000 units of **ZP** (Credits) for the client to use.
 
-### Scenario B: $ZST Price Crashes (Bear Market)
-* **The Fear:** Users stop scanning because rewards are worthless.
-* **The Reality:** The protocol adjusts the burn rate. The merchant burns *more* $ZST to mint the same ZPs. The user still receives the same "energy value" (e.g., a free coffee worth $5.00) even if the $ZST token is down 50%.
+### Scenario A: Bull Market ($ZST Price Skyrockets)
+* **The Fear:** The service becomes too expensive for companies.
+* **The Reality:** Since ZP is pegged to Dollar/Utility, the protocol burns *fewer* $ZST tokens to mint the same amount of ZP. The cost to the Client remains exactly $1,000.
+
+### Scenario B: Bear Market ($ZST Price Crashes)
+* **The Fear:** Revenue dries up; the token collapses.
+* **The Reality:** The protocol burns *more* $ZST tokens to mint the same ZP. This dramatically accelerates deflation during low prices, creating a "floor" for the token value.
 
 ---
 
 ## Summary Table
 
-| Feature | **$ZST** | **ZP** |
+| Feature | **$ZST (The Asset)** | **ZP (The Credit)** |
 | :--- | :--- | :--- |
-| **Primary Use** | Speculation, Staking, Governance | Rewards, Payments, Utility |
-| **Target Audience** | Investors, Node Operators | Everyday Users, Shoppers |
-| **Value Source** | Market Demand & Scarcity | Merchant Services & Energy |
-| **Volatility** | High (Market Driven) | Low / Stable (Utility Pegged) |
-| **Distribution** | Exchanges, Liquidity Pools | Proof of Presence Mining |
+| **Primary Use** | Speculation, Collateral, Burning | Mining Rewards, API Payments |
+| **Target Audience** | Investors, Node Operators | Everyday Users, AI Agents |
+| **Pricing Model** | Market Driven (Volatile) | Utility Pegged (Stable) |
+| **Economic Effect** | Deflationary (Supply Shrinks) | Elastic (Supply Matches Demand) |
+| **Exchangeability** | Tradeable on CEX/DEX | Internal Only (Redeemable) |
 
-By separating these layers, Zusei ensures that the **Energy Grid** keeps running smoothly, regardless of what the crypto markets are doing.
+By implementing this **Two-Token Architecture**, Zusei ensures that the "Data Oracle" remains affordable and stable for Fortune 500 clients, while ensuring that the value generated by that usage accrues directly to the holders of **$ZST**.
